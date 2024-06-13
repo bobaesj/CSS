@@ -1,0 +1,10 @@
+/* direction 속성: 텍스트를 표시하는 방향을 지정
+ltr: left to right
+rtl: right to left */
+.ltr {
+    direction: ltr;
+}
+
+.rtl {
+    direction: rtl;
+}

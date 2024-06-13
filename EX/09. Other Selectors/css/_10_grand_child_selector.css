@@ -1,0 +1,11 @@
+/* 자손선택자: 특정태그의 하위태그를 모두 사용할 때 사용한다. */
+
+.container1 .txt{
+    background: skyblue;
+    color: red;
+}
+
+.container2 > .txt{
+    background: yellow;
+    color: green;
+}
