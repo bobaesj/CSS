@@ -32,3 +32,8 @@ div {
     /* 백분율: 가로길이 세로길이로 지정, 원본 이미지 크기에서의 퍼센테이지로 지정 */
     background-size: 60% 40%;
 }
+
+.box6 {
+    background-size: cover;
+    background-position: center;
+}
