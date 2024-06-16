@@ -1,0 +1,54 @@
+/* display: grid; => 해당 태그를 그리드 박스로 지정 
+                    그리드 컨테이너로 지정된 태그 안에 배치되는 태그들은 그리드 항목으로 지정된다
+                    그리드 컨테이너에 지정된 배치 방식에 따라서 그리ㅡㄷ 항목들이 배치된다. 
+grid-template-columns 속성: 그리드 컨테이너에 컬럼을 몇개를 얼마의크기로 만들건지 지정하는 속성
+grid-template-rows 속성: 그리드 컨테이너에 행을 얼마의 크기로 만들건지 지정하는 속성*/
+
+.container {
+    display: grid;
+    /* 그리드 컨테이너에 200px 크기로 4개 넣는다 => width: ; 의 역할 */
+    /* grid-template-columns: 200px 200px 200px 200px; */
+    /* grid-template-columns: 1fr 2fr 2fr 1fr; */
+    /* repeat 함수: 동일한 크기로 몇개컬럼을 생성할 건지 지정할 수있는 함수
+                    첫 번째 매개변수는 컬럼의 개수, 두번째 매개변수는 가로크기 */
+    /* grid-template-columns: repeat(5, 1fr); */
+    /* minmax 함수: 컬럼이나 행의 크기의 최소값과 최대값을 지정할 수 있는 함수 
+                    첫 번째 매개변수는 최소값이고, 브라우저를 아무리 줄여도 최소값보다 작아지지 않는다
+                    두 번째 매개변수는 최대값으고, 브라우저를 아무리 늘려도 최대값보다 커지지 않는다*/
+    grid-template-columns: repeat(5, minmax(100px, 300px));
+
+    /* 그리드 컨테이너에 100px 크기로 2개 넣는다=> height: ; 의 역할 */
+    /* 두번째 행까지 세로길이를 100px로 지정, 더 생성되는 행은 auto로 지정됨 */
+    grid-template-rows: 100px 100px;
+}
+
+.box1 {
+    background: red;
+}
+.box2 {
+    background: blue;
+}
+
+.box3 {
+    background: yellow;
+}
+
+.box4 {
+    background: green;
+}
+
+.box5 {
+    background: gray;
+}
+
+.box6 {
+    background: aqua;
+}
+
+.box7 {
+    background: violet;
+}
+
+.box8 {
+    background: brown;
+}
